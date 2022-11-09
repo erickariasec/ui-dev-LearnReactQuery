@@ -34,8 +34,9 @@ export function IssueItem({
         ))}
       </span>
       <small>
-        #{number} opened {relativeDate(createdDate)} {createdByUser.isSuccess ? `by ${createdByUser.data.name}` : ""}
-      </small>
+          #{number} opened {relativeDate(createdDate)}{" "}
+          {createdByUser.isSuccess ? `by ${createdByUser.data.name}` : ""}
+        </small>
     </div>
     {assignee ? (
         <img
