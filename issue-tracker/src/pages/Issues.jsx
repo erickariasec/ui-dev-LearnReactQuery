@@ -14,11 +14,11 @@ export default function Issues() {
           <IssuesList labels={labels} status={status} />
         </section>
         <aside>
-          <LabelList 
-            selected={labels} 
-            toggle={(label) => 
-              setLabels(currentLabels => 
-                currentLabels.includes(label) 
+          <LabelList
+            selected={labels}
+            toggle={(label) =>
+              setLabels((currentLabels) =>
+                currentLabels.includes(label)
                   ? currentLabels.filter(
                       (currentLabel) => currentLabel != label
                     )

@@ -20,7 +20,7 @@ function App() {
         <Route path="/issue/:number" element={<Issue />} />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -3,7 +3,7 @@ const possibleStatus = [
   { id: "todo", label: "To-do" },
   { id: "inProgress", label: "In Progress" },
   { id: "done", label: "Done" },
-  { id: "cancelled", label: "Cancelled" }
+  { id: "cancelled", label: "Cancelled" },
 ];
 export function StatusSelect({ value, onChange }) {
   return (
